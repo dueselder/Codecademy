@@ -1,0 +1,176 @@
+* {
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+}
+
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 69px;
+}
+
+#logo {
+  height: 50px;
+}
+
+
+/* Style the navigation links */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 1.5em;
+  list-style: none;
+  font-weight: bold;
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+nav a {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  color: #8B6914;
+  border-bottom: 2px solid #8B6914;
+}
+
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+}
+
+.header img{
+  height: 700px;
+  max-width: 1200px
+}
+
+.hero-overlay {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.2;
+}
+
+.tea_of_the_month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 1000px;
+  padding: 20px;
+  line-height: 0.2;
+}
+
+.tea_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tea {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px;
+  width: 300px;
+}
+
+.tea img {
+  width: 300px;
+}
+
+.tea h4 {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  text-align: center;
+}
+
+.locations h2 {
+  margin-top: 15px;
+  background: none;
+}
+
+.location-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  background: none;
+  opacity: 1;
+}
+
+.locations .location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 0 10px;
+  line-height: 2;
+  opacity: 1;
+}
+
+.locations .location:first-child {
+  margin-left: 0;
+}
+
+.locations .location:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: left;
+}
