@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #C3D9AC;
+    --secondary-color: #75946E;
+    --text-color: #333;
+    --white-color: #fff;
+}
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    height: 3rem;
+    width: 100%;
+    z-index: 999;
+}
+
+header .logo, header nav, header ul {
+    display: flex;
+    flex: 1;
+}
+
+header ul {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    margin: 0 1rem;
+}
+
+header a {
+    color: var(--white-color);
+    text-decoration: none;
+    transition: text-decoration 0.3s ease-in-out;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.hero, .about, .team {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    border-bottom: 0.25rem solid var(--secondary-color);
+}
+
+.hero {
+    top: 3rem;
+    background-image: url("../images/header.png");
+}
+
+.hero-text, .about-text, .team-text {
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+    padding: 1.5rem;
+    width: 25.625rem;
+    text-align: center;
+}
+
+.hero-text {
+    margin-left: 5rem;
+}
+
+.about {
+    background-image: url("../images/section_2.png");
+    justify-content: flex-end;
+}
+
+.about-text {
+    margin-right: 5rem;
+}
+
+.btn {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: auto;  /* Push the button to the bottom */
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pricing {
+    display: flex;
+    padding: 2rem 0;
+    background-color: var(--primary-color);
+}
+
+.pricing-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 2rem;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.pricing-box-text {
+    display: flex;
+    flex-direction: column;  /* Stack children vertically */
+    height: 100%;  /* Ensure the container takes the full height */
+    padding: 0 2rem 2rem 2rem;
+}
+
+.pricing-box-text .btn {
+    margin-top: auto;  /* Push the button to the bottom */
+}
+
+.pricing-box-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem;
+    width: 100%;
+}
+
+.pricing-box-image img, .employees-image img {
+    max-width: 90%;
+    border: 1px solid var(--secondary-color);
+}
+
+.team {
+    background-image: url("../images/section_4.png");
+    justify-content: flex-start;
+}
+
+.team-text {
+    margin-right: 5rem;
+}
+
+.employee {
+    display: flex;
+    height: 30rem;
+    background-color: var(--primary-color);
+}
+
+.employees-text, .employees-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: rgba(255, 255, 255, 0.7); /* 70% opaque white */
+    padding: 1rem; /* Add some padding for better spacing */
+    border-radius: 5px; /* Optional: rounded corners for aesthetics */
+}
+
+.employees-text {
+    
+}
+
+.employees-image {
+    overflow: hidden;
+}
+
+footer {
+    display: flex;
+    background-color: var(--secondary-color);
+}
+
+.footer-text {
+    margin-left: 5rem;
+}
+
+@media (max-width: 860px) {
+    .pricing {
+        flex-direction: column;
+    }
+
+    .pricing-box {
+        margin: 1rem 0;
+    }
+
+    .pricing-box-image {
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .team-text {
+        margin-bottom: 1rem;
+    }
+
+    .employee {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .employee.reverse {
+        flex-direction: column-reverse;
+    }
+}

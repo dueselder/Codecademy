@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+:root {
+    --primary-color: #FFD700;
+    --secondary-black: #000000;
+    --tertiary-silver:  #C0C0C0;
+    --accent-red: #FF6666;
+    --accent-blue: #6699FF;
+    --accent-white: #F0F0F0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    color: var(--tertiary-silver);
+    opacity: 0.9;
+}
+
+body {
+    background-color: var(--secondary-black);
+    color: var(--tertiary-silver);
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--secondary-black);
+    cursor: pointer;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+nav {
+    background-color: var(--secondary-black);
+    display: flex;
+    justify-content: space-between;
+    //padding: 1rem;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 0.1rem solid var(--primary-color);
+}
+
+nav .logo, nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    flex: 1;
+    
+}
+
+.logo-img {
+    flex: 0.11;
+    background-color: var(--primary-color); 
+    width: 5rem;
+    min-width: 5rem;
+}
+
+.logo-img img {
+    width: 100%;
+    border: 0.1rem solid var(--primary-color);
+
+}
+
+nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--tertiary-silver);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('../images/header.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 96vh;
+    position: relative;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 0.25rem solid var(--tertiary-silver);
+}
+
+.hero-content {
+    align-items: center;
+    text-align: center;
+    background-color: var(--accent-white);
+    color: var(--secondary-black);
+    padding: 2rem;
+}
+
+.content-carussel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    height: 25rem;
+    background-color: var(--accent-blue);
+    justify-content: space-between;
+    border-bottom: 0.25rem solid var(--tertiary-silver);
+}
+
+.carussel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--accent-white);
+    border: 0.1rem solid var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.carussel-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.carussel-item-image {
+
+}
+
+.carussel-item-text {
+
+}
+
+.about-us {
+    background-image: url('../images/member_meeting_pub.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+.events {
+    background-image: url('../images/journey.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--tertiary-silver);
+    margin: 0 1rem;
+}
+
+.footer-left {
+    flex: 1;
+    background-color: var(--secondary-black);
+    color: var(--tertiary-silver);
+    padding: 1rem;
+}
+
+.footer-right {
+    flex: 1;
+    flex-direction: column;
+    background-color: var(--secondary-black);
+    color: var(--tertiary-silver);
+    padding: 1rem;
+    
+}
+
