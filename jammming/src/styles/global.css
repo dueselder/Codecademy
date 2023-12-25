@@ -1,0 +1,178 @@
+/* global.css */
+:root {
+    /* Color Variables */
+    --rich-black: #12191eff;
+    --gunmetal: #2a3439ff;
+    --silver-sand: #bfc0c0ff;
+    --platinum: #e5e5e5ff;
+    --imperial-red: #ed2939ff;
+  
+    /* Spacing Variables */
+    --space-xxs: 4px;
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-xxl: 48px;
+  
+    /* Font Size Variables */
+    --font-size-sm: 0.8rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.2rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2rem;
+  
+    /* Font Family Variables */
+    --font-family-default: 'Open Sans', sans-serif;
+  }
+  
+  /* Base Element Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-default);
+    background-color: var(--rich-black);
+    color: var(--silver-sand);
+    text-align: center;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--platinum);
+  }
+  
+  a {
+    color: var(--imperial-red);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .MuiPaper-root.playlist, .MuiPaper-root.search-results {
+    background-color: rgba(0, 0, 0, 0.8); /* Increased opacity for better contrast */
+    padding: 16px; /* Padding for some space inside the containers */
+    margin-bottom: 24px; /* Margin for spacing between elements */
+    border-radius: 4px; /* Rounded corners for aesthetics */
+  }
+
+  .playlist-title, .search-results-title {
+    color: white;
+    font-weight: bold; /* Makes the title bolder */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for legibility */
+    padding: 8px;
+  }
+  
+  .button {
+    background-color: var(--imperial-red); /* Your primary button color */
+    color: var(--platinum);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds depth to the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .button:hover {
+    background-color: #c82333; /* Darker shade for hover state */
+  }
+  
+  
+  .text-with-background {
+    color: var(--platinum); /* Light text color for better contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow to make text stand out */
+  }
+
+  /* Search Bar */
+  .search-bar {
+    margin: var(--space-lg) auto;
+    max-width: 600px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter background */
+    border-radius: 4px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    border-radius: 4px;
+    border: 1px solid var(--platinum);
+    margin-right: 10px;
+  }
+  
+  /* Track List Styles */
+  .tracklist {
+    margin: var(--space-lg) auto;
+    max-width: 800px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+/* Track.css */
+.track {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for list items */
+    color: var(--silver-sand); /* Light text color for better contrast */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }  
+  
+  .track:hover {
+    background-color: var(--rich-black);
+  }
+  
+  /* Playlist Styles */
+  .playlist {
+    margin: var(--space-lg) auto;
+    max-width: 800px;
+  }
+  
+  .playlist-title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-md);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); /* Text shadow for headings */
+  }
+
+  /* Search Results Styles */
+    /* Playlist Styles */
+    .search-results {
+        margin: var(--space-lg) auto;
+        max-width: 800px;
+      }
+      
+      .playlist-title {
+        font-size: var(--font-size-lg);
+        margin-bottom: var(--space-md);
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); /* Text shadow for headings */
+      }
+  
+
+    .header-title {
+        font-size: var(--font-size-xxl);
+        color: var(--platinum);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }   
+
+  /* Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Responsive Design Breakpoints */
+  @media (max-width: 768px) {
+    /* Adjust styles for tablets and below */
+    .search-bar, .tracklist, .playlist {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust styles for phones */
+    .search-input, button {
+      width: 100%;
+      margin-bottom: var(--space-xs);
+    }
+  }
+  

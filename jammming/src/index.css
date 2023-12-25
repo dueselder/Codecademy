@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-image: url('/src/img/background.png');
+  background-position: center center; /* Centers the background */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  background-size: cover; /* Covers the entire area, might crop some parts of the image */
+  background-attachment: fixed; /* Optional: fixes the background relative to the viewport */
+  min-height: 100vh; /* This makes sure that the background covers the full viewport height */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
